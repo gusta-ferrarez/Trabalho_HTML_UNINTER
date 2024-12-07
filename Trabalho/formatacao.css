@@ -1,0 +1,94 @@
+        body {
+            margin: 0px
+        }
+
+        html {
+            font-family: "Mangal Pro", 'Lucida Sans',  sans-serif ;
+            background-color: bisque;
+        }
+        /*Colocando grid para organização*/
+        .container {
+           display: grid ;
+        }
+        /*Cabeçalho*/
+        .header {
+            margin: 20px;
+            text-align: center;
+            background-color: coral;
+            font-size: 15px;
+        }
+        /*Minha imagem*/
+        .imagem_eu img {
+            margin: 20px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 200px;
+        }
+        /*Principal*/
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            color: gainsboro;
+        }
+
+      
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid black 2px;
+            border-radius: 10px;
+        }
+
+        li {
+            float: left
+        }
+        /*Efeito ao passar o mouse*/
+        a:hover {
+            background-color: burlywood;
+            color: darkgrey;
+            border-color: darkgray;
+        }
+        /*Rodapé*/
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: indianred;
+            text-align: center;
+            font-style: italic;
+            color: whitesmoke;
+        }
+
+        /* media query para ajustar para dispositivos móveis */
+        @media only scren and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_eu {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
